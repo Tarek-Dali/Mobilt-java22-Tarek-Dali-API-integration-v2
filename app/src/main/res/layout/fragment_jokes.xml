@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ED9370"
+    tools:context=".JokesFragment">
+
+    <Button
+        android:id="@+id/btnGetJoke"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="185dp"
+        android:layout_marginTop="200dp"
+        android:text="Get joke"
+        android:textColor="#FFFCFC"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewJokes"
+        android:layout_width="241dp"
+        android:layout_height="172dp"
+        android:layout_marginLeft="115dp"
+        android:layout_marginTop="300dp"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+</FrameLayout>

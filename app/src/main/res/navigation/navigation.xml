@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/masterFragment">
+
+    <fragment
+        android:id="@+id/masterFragment"
+        android:name="com.example.uppgift3v1.MasterFragment"
+        android:label="fragment_master"
+        tools:layout="@layout/fragment_master" >
+        <action
+            android:id="@+id/action_masterFragment_to_chuckNorrisFragment"
+            app:destination="@id/chuckNorrisFragment" />
+        <action
+            android:id="@+id/action_masterFragment_to_dogsFragment"
+            app:destination="@id/dogsFragment" />
+        <action
+            android:id="@+id/action_masterFragment_to_jokesFragment"
+            app:destination="@id/jokesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chuckNorrisFragment"
+        android:name="com.example.uppgift3v1.ChuckNorrisFragment"
+        android:label="fragment_chuck_norris"
+        tools:layout="@layout/fragment_chuck_norris" >
+        <action
+            android:id="@+id/action_chuckNorrisFragment_to_dogsFragment"
+            app:destination="@id/dogsFragment" />
+        <action
+            android:id="@+id/action_chuckNorrisFragment_to_jokesFragment"
+            app:destination="@id/jokesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/dogsFragment"
+        android:name="com.example.uppgift3v1.DogsFragment"
+        android:label="fragment_dogs"
+        tools:layout="@layout/fragment_dogs" >
+        <action
+            android:id="@+id/action_dogsFragment_to_chuckNorrisFragment"
+            app:destination="@id/chuckNorrisFragment" />
+        <action
+            android:id="@+id/action_dogsFragment_to_jokesFragment"
+            app:destination="@id/jokesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/jokesFragment"
+        android:name="com.example.uppgift3v1.JokesFragment"
+        android:label="fragment_jokes"
+        tools:layout="@layout/fragment_jokes" >
+        <action
+            android:id="@+id/action_jokesFragment_to_dogsFragment"
+            app:destination="@id/dogsFragment" />
+        <action
+            android:id="@+id/action_jokesFragment_to_chuckNorrisFragment"
+            app:destination="@id/chuckNorrisFragment" />
+    </fragment>
+</navigation>
